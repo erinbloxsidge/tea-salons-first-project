@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <title>🍵 London Tea</title>
+  <style>
+    body{
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      
+    }
+    h1{
+      background: rgb(174,235,238);
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: 100;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 12px;
+      box-shadow:  8px 8px 16px #94c8ca, 
+             -8px -8px 16px #c8ffff;
+      
+
+    }
+    h2 {
+      text-align: center;
+      font-size: 18px;
+      color: #000000;
+      opacity: 0.7;
+    }
+    img{
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      max-width: 75%;
+      border-radius: 12px;
+    }
+    p{
+      font-size: 13px;
+    }
+    ul{
+      list-style: none;
+      max-width: 85%;
+      text-align: center;
+    }
+    li{
+      line-height: 1.5;
+      padding: 10px;
+      border-radius: 12px;
+      text-decoration: none;
+
+    }
+    li:hover{
+      background:#dae4ed;
+      opacity: 0.8;
+    }
+
+    a{
+      text-decoration: none;
+      color:black
+    }
+    a:hover{
+      color: #131cab;
+      text-decoration: none;
+    }
+
+    button{
+      display: block;
+      margin: 0 auto;
+      background: black;
+      opacity: 0.7;
+      color: white;
+      font-size: 18px;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+      transition: all 150ms ease-in-out;
+
+    }
+    button:hover{
+      opacity: 0.8;
+      background:#497ca5;
+      cursor: pointer;
+      color: white;
+    }
+    .more-info{
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+      text-align: center;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .more-info:hover{
+      text-decoration: none;
+    }
+    .tea-types{
+      color: #131cab;
+    }
+    
+    .footer{
+      text-align: center;
+      opacity: 0.7;
+    }
+    .container{
+      background: rgb(174,235,238);
+      background: linear-gradient(rgba(174,235,238,1) 0%, rgba(148,187,233,1) 100%);
+      max-width: 50%;
+      margin: 50px auto;
+      padding: 10px;
+      border-radius: 14px;
+      box-shadow:  9px 9px 18px #d2d2d2, 
+             -9px -9px 18px #ffffff
+
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+  <h1>🍵 Explore Tea in London 🇬🇧</h1>
+
+  <a href="https://chasingteas.com/collections/gaiwan/products/blue-ocean-gaiwan">
+  <img
+  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/830/original/GaiwanBlue-Chasingteas.jpg?1607539667"
+  alt="Person pouring tea from a gaiwan into a gong dao bei.">
+  </a>
+  <h2> My Top Tea Shops </h2>
+  <ul>
+    <li>
+      <span class="shop-link"><a href="https://meileaf.com/" target="_blank"></span><strong>Mei Leaf</strong></a>
+      exists to bring true tea culture to London and beyond. Their hand-sourced teas run the full range of tea types: <span class="tea-types">White, Green, Matcha, Yellow, Oolong, Black, Raw</span> and <span class="tea-types">Ripened Puerh</span>. They run a physical store and teahouse in Camden and have an extensive website with excellent resources on all things tea culture. 
+    </li>
+    <li>
+      <a href="https://postcardteas.com" target="_blank"><strong>Postcard Teas</strong></a>
+      specialises in sourcing teas from small scale producers who farm less than 15 acres. Based in Mayfair, they operate a physical storefront and online shop, offering a well-curated selection of teas from <span class="tea-types">China, Japan, Korea, Vietnam, Taiwan,</span> and <span class="tea-types">India</span>.
+    </li>
+    <hr>
+
+  </ul>
+    <a href="https://foursquare.com/user/316957/list/proper-tea-in-london" target="_blank" class="more-info"> See all my recommended tea houses on Foursquare!
+    </a>
+    
+  </p>
+  <br>
+  <button class="newsletter-button">
+    🍵 Newsletter Signup 🍵
+  </button>
+  <p class="footer">
+    <em>This page was built by Erin Bloxsidge</em>
+  </p>
+  </div>
+  <script>
+    function samples() {
+    let name = prompt("What is your first name?");
+    let country = prompt("What country are you located in?");
+    let email = prompt("What is your email address?");
+
+    if (country === "UK"){
+      alert("Thank you, " + name + "! 🇬🇧 " + "Keep an eye out for our next newsletter! 🍵");
+    } else {
+      if (country === "USA") {
+          alert("Thank you, " + name + "! 🇺🇸 " + "Keep an eye out for our next newsletter! 🍵");
+      } else { 
+          alert("Thank you, " + name + "! 🍃 " + "Keep an eye out for our next newsletter! 🍵");
+        }
+      }
+    }
+  
+    
+    let newsButton = document.querySelector(".newsletter-button")
+    newsButton.addEventListener("click", samples);
+  </script>
+</body>
+</html>
